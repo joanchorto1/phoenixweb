@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+#footer-img {
+  display: block;
+  max-width: 10%;
+  height: 10%;
+}
+
+#card-div{
+  max-width: 100%;
+  height: 25%;
+  background-image:  url("https://png.pngtree.com/png-vector/20220704/ourmid/pngtree-phoenix-bird-logo-with-flaming-fire-body-for-game-team-png-image_5686330.png");
+  background-position: center; /* Alinea la imagen al centro vertical y horizontal */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: relative;
+}
+#img-nav{
+  display: block;
+  width: 15%;
+  height: 25%;
+}
+
+
+

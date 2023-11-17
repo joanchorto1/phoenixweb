@@ -1,74 +1,78 @@
 import Layout from "../layout/layout";
+import React from "react";
+import { Card, Carousel } from 'react-bootstrap';
+
+
 const Home =() =>{
-    return(<div className="App">
+    return(<div>
             <>
                 <Layout>
-                    <div className="Heade-titile">
-                    <div>
-                        <h1>Phoenix Communication</h1>
-                    </div>
-                    </div>
-                    <div className={"Carrusel logos"}>
-                    <div id="carouselExample" className="carousel slide">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src="..." className="d-block w-100" alt="..."/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src="..." className="d-block w-100" alt="..."/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src="..." className="d-block w-100" alt="..."/>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    </div>
-                    <div className={"Descrupcio"}>
-                        <div>
-                            <h2>Descripcion:</h2>
-                            <p>Monento mori</p>
-                            <button><a href="/contact">Contactonos</a></button>
-                        </div>
-                    </div>
-                    <div className={"Tarifas"}>
-                        <span id={"Basic"}>
-                            <h3>Basic plan</h3>
-                            <ul>
-                                <li>a</li>
-                                <li>b</li>
-                                <li>c</li>
-                                <li>s</li>
-                            </ul>
-                            <button><a href="/contact">Contratar</a></button>
-                        </span><span id={"Basic"}>
-                            <h3>Basic plan</h3>
-                            <ul>
-                                <li>a</li>
-                                <li>b</li>
-                                <li>c</li>
-                                <li>s</li>
-                            </ul>
-                            <button><a href="/contact">Contratar</a></button>
-                        </span><span id={"Basic"}>
-                            <h3>Basic plan</h3>
-                            <ul>
-                                <li>a</li>
-                                <li>b</li>
-                                <li>c</li>
-                                <li>s</li>
-                            </ul>
-                            <button><a href="/contact">Contratar</a></button>
-                        </span>
 
+                    <div className="container mt-5">
+                        {/* Descripción de la empresa */}
+                        <section className="mb-5">
+                            <h2 className="text-center mb-4">Marketing y Desarrollo de Aplicaciones Web</h2>
+                            <p className="text-center">
+                                Somos una empresa dedicada a proporcionar servicios de marketing y desarrollo de aplicaciones web. Ofrecemos soluciones innovadoras y personalizadas para satisfacer las necesidades de otras empresas.
+                            </p>
+                        </section>
 
+                        {/* Carrusel de logos */}
+                        <section className="mb-5">
+                            <h2 className="text-center mb-4">Nuestros Clientes</h2>
+                            <Carousel>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="https://via.placeholder.com/800x400"
+                                        alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                {/* Agregar más elementos del carrusel según sea necesario */}
+                            </Carousel>
+                        </section>
+
+                        {/* Tarjetas de servicios */}
+                        <section className="mb-5">
+                            <h2 className="text-center mb-4">Nuestros Servicios</h2>
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <Card>
+                                        <Card.Body>
+                                            <Card.Title>Servicio A</Card.Title>
+                                            <Card.Text>
+                                                Descripción del Servicio A.
+                                            </Card.Text>
+                                            <Card.Text className="text-muted">Precio: $XXX</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </div>
+
+                                <div className="col-md-4">
+                                    <Card>
+                                        <Card.Body>
+                                            <Card.Title>Servicio B</Card.Title>
+                                            <Card.Text>
+                                                Descripción del Servicio B.
+                                            </Card.Text>
+                                            <Card.Text className="text-muted">Precio: $XXX</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </div>
+
+                                <div className="col-md-4">
+                                    <Card>
+                                        <Card.Body>
+                                            <Card.Title>Servicio C</Card.Title>
+                                            <Card.Text>
+                                                Descripción del Servicio C.
+                                            </Card.Text>
+                                            <Card.Text className="text-muted">Precio: $XXX</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </div>
+                            </div>
+                        </section>
                     </div>
 
                 </Layout>
