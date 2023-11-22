@@ -1,5 +1,5 @@
 {
-  "name": "phenixcommunicationweb",
+  "name": "phenixgrp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
-    "chart.js": "^3.9.1",
     "react": "^18.2.0",
     "react-bootstrap": "^1.3.0",
     "react-chartjs-2": "^5.2.0",
