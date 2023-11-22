@@ -8,7 +8,7 @@ const Services = () => {
                 <section style={{marginBottom:'10%'}}>
                     <h2 className="text-center mb-4">Nuestros Servicios</h2>
                     <p>
-                        En Phoenix Communication, ofrecemos una gama completa de servicios diseñados para potenciar
+                        En Phoenix Group, ofrecemos una gama completa de servicios diseñados para potenciar
                         tu presencia en línea y satisfacer tus necesidades de marketing y desarrollo. Nuestro equipo
                         de profesionales altamente capacitados está listo para brindar soluciones personalizadas que
                         se alineen con tus objetivos comerciales.
@@ -43,7 +43,7 @@ const Services = () => {
                     <div>
                         <h3>Diseño Gráfico</h3>
                         <p>
-                            El diseño gráfico es una parte integral de la identidad de marca. En Phoenix Communication,
+                            El diseño gráfico es una parte integral de la identidad de marca. En Phoenix Group,
                             creamos diseños visualmente atractivos que reflejan la esencia de tu marca. Desde la
                             creación de logotipos memorables hasta el diseño de materiales de marketing, nuestro equipo
                             de diseñadores trabaja para destacar tu marca en un mundo visualmente competitivo.
@@ -56,7 +56,7 @@ const Services = () => {
                     <div>
                         <h3>Gestión de Eventos</h3>
                         <p>
-                            En Phoenix Communication, entendemos que la organización de eventos es una oportunidad para
+                            En Phoenix Group, entendemos que la organización de eventos es una oportunidad para
                             destacar y dejar una impresión duradera. Nuestro equipo experto en gestión de eventos se
                             encarga de todos los detalles, desde la planificación hasta la ejecución, garantizando el
                             éxito de cada ocasión.
@@ -68,7 +68,7 @@ const Services = () => {
                         </p>
                     </div>
                     <p>
-                        En Phoenix Communication, nuestros servicios van más allá de lo convencional. Somos tu socio
+                        En Phoenix Group, nuestros servicios van más allá de lo convencional. Somos tu socio
                         estratégico en el viaje hacia el éxito. ¡Descubre cómo podemos potenciar tu negocio y hacerlo
                         destacar en el mercado!
                     </p>

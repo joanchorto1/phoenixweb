@@ -10,7 +10,7 @@ const About = () => {
                 <section  className={"justify-content-around"} style={{marginBottom:'10%' }}>
                     <h2 className="text-center mb-4">Acerca de Nosotros</h2>
                     <p>
-                        En Phoenix Communication, no solo creamos soluciones; creamos conexiones significativas.
+                        En Phoenix Group, no solo creamos soluciones; creamos conexiones significativas.
                         Nuestra historia es una fusión de creatividad, innovación y dedicación. Como una empresa joven
                         con sede en la hermosa provincia de Tarragona, estamos decididos a dejar una huella duradera en
                         el mundo del marketing, diseño gráfico y desarrollo web.
@@ -49,7 +49,7 @@ const About = () => {
                         </p>
                     </div>
                     <p>
-                        En Phoenix Communication, no solo somos un proveedor de servicios; somos un socio estratégico
+                        En Phoenix Group, no solo somos un proveedor de servicios; somos un socio estratégico
                         en tu viaje hacia el éxito. Únete a nosotros mientras creamos, innovamos y conectamos ideas
                         con resultados extraordinarios.
                     </p>

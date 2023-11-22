@@ -1,4 +1,5 @@
 import Layout from "../layout/layout";
+
 const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -48,7 +49,7 @@ const Contact = () => {
                                 </label>
                                 <textarea className="form-control" id="mensaje" name="mensaje" rows="4" required />
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{marginBottom:'10%'}}>
+                            <button  type="submit" className="btn btn-primary" style={{marginBottom:'10%', backgroundColor: '#2c3e50'}}>
                                 Enviar Mensaje
                             </button>
                         </form>

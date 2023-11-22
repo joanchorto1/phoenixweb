@@ -8,7 +8,7 @@ const Clients = () => {
                 <section>
                     <h2 className="text-center mb-4">Nuestros Clientes Satisfechos</h2>
                     <p>
-                        En Phoenix Communication, hemos tenido el privilegio de trabajar con una variedad de clientes en
+                        En Phoenix Group, hemos tenido el privilegio de trabajar con una variedad de clientes en
                         diferentes industrias. Aquí te presentamos algunos de nuestros clientes satisfechos.
                     </p>
                     <div className="row">
