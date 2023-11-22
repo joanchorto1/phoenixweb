@@ -22,9 +22,9 @@ const Clients = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Cliente 1</h5>
                                     <p className="card-text">Breve descripción del Cliente 1 y su experiencia con nosotros.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -38,9 +38,9 @@ const Clients = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Cliente 2</h5>
                                     <p className="card-text">Breve descripción del Cliente 2 y su experiencia con nosotros.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -54,9 +54,9 @@ const Clients = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Cliente 3</h5>
                                     <p className="card-text">Breve descripción del Cliente 3 y su experiencia con nosotros.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>

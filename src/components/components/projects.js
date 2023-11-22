@@ -22,9 +22,9 @@ const Projects = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Proyecto 1</h5>
                                     <p className="card-text">Breve descripción del proyecto 1.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -38,9 +38,9 @@ const Projects = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Proyecto 2</h5>
                                     <p className="card-text">Breve descripción del proyecto 2.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -54,9 +54,9 @@ const Projects = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">Proyecto 3</h5>
                                     <p className="card-text">Breve descripción del proyecto 3.</p>
-                                    <a href="#" className="btn btn-primary">
-                                        Ver Detalles
-                                    </a>
+                                    {/*<a href="#" className="btn btn-primary">*/}
+                                    {/*    Ver Detalles*/}
+                                    {/*</a>*/}
                                 </div>
                             </div>
                         </div>
