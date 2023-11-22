@@ -1,6 +1,7 @@
 import Layout from "../layout/layout";
 import React from "react";
-import {Button, Card, Carousel} from 'react-bootstrap';
+
+
 
 const About = () => {
     return (
