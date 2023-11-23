@@ -6,7 +6,7 @@ const Contact = () => {
         e.preventDefault();
 
         // Configurar el servicio Email.js
-        emailjs.sendForm('service_0md04a8', 'template_4wu4rsh', e.target, 'user_your_user_id')
+        emailjs.sendForm('service_0md04a8', 'template_4wu4rsh', e.target, 'igLg_BldBQqE1PovM')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
