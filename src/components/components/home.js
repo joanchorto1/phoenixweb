@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Carousel } from 'react-bootstrap';
+import { Button,  Carousel } from 'react-bootstrap';
 import Layout from "../layout/layout";
 import LogoVidal from "../img/tomasvidal.png"
 import LogoGastromar from "../img/Selecció_161.png"
