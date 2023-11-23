@@ -1,7 +1,10 @@
 import Layout from "../layout/layout";
 import emailjs from 'emailjs-com';
-import React from "react";
+import React, { useState } from "react";
+
 const Contact = () => {
+    const [isFormSubmitted, setFormSubmitted] = useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -9,12 +12,14 @@ const Contact = () => {
         emailjs.sendForm('service_0md04a8', 'template_4wu4rsh', e.target, 'igLg_BldBQqE1PovM')
             .then((result) => {
                 console.log(result.text);
-            }, (error) => {
+                setFormSubmitted(true);
+            })
+            .catch((error) => {
                 console.log(error.text);
+                setFormSubmitted(false);
             });
-
-        console.log('Formulario enviado');
     };
+
     return (
         <Layout>
             <div className="container mt-5">
@@ -67,6 +72,9 @@ const Contact = () => {
                                 Enviar Mensaje
                             </button>
                         </form>
+                        {isFormSubmitted && (
+                            <p className="text-success mt-3">¡El mensaje se envió correctamente!</p>
+                        )}
                     </div>
                 </section>
             </div>
