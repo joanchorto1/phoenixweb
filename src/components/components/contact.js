@@ -4,6 +4,12 @@ import React, { useState } from "react";
 
 const Contact = () => {
     const [isFormSubmitted, setFormSubmitted] = useState(false);
+    const [formFields, setFormFields] = useState({
+        nombre: '',
+        empresa: '',
+        email: '',
+        mensaje: '',
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -13,11 +19,26 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 setFormSubmitted(true);
+                // Vaciar los campos del formulario después del envío exitoso
+                setFormFields({
+                    nombre: '',
+                    empresa: '',
+                    email: '',
+                    mensaje: '',
+                });
             })
             .catch((error) => {
                 console.log(error.text);
                 setFormSubmitted(false);
             });
+    };
+
+    const handleChange = (e) => {
+        // Actualizar el estado de los campos del formulario mientras el usuario escribe
+        setFormFields({
+            ...formFields,
+            [e.target.name]: e.target.value,
+        });
     };
 
     return (
@@ -48,25 +69,57 @@ const Contact = () => {
                                 <label htmlFor="nombre" className="form-label">
                                     Nombre:
                                 </label>
-                                <input type="text" className="form-control" id="nombre" name="nombre" required />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="nombre"
+                                    name="nombre"
+                                    value={formFields.nombre}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="empresa" className="form-label">
                                     Empresa:
                                 </label>
-                                <input type="text" className="form-control" id="empresa" name="empresa" required />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="empresa"
+                                    name="empresa"
+                                    value={formFields.empresa}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">
                                     Email:
                                 </label>
-                                <input type="email" className="form-control" id="email" name="email" required />
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    name="email"
+                                    value={formFields.email}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="mensaje" className="form-label">
                                     Mensaje:
                                 </label>
-                                <textarea className="form-control" id="mensaje" name="mensaje" rows="4" required />
+                                <textarea
+                                    className="form-control"
+                                    id="mensaje"
+                                    name="mensaje"
+                                    rows="4"
+                                    value={formFields.mensaje}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <button type="submit" className="btn btn-primary" style={{ marginBottom: '10%', backgroundColor: '#2c3e50' }}>
                                 Enviar Mensaje
