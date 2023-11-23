@@ -39,7 +39,7 @@ const Home = () => {
                 alignItems: 'center',
             }}>
                 <div className="container text-center">
-                    <h2 className={"mb-4"}>Phoenix Group</h2>
+                    <h1 className={"mb-4"}>Phoenix Group</h1>
                     <h3>Expertos en Marketing Digital, Diseño Gráfico y Desarrollo Web en Tarragona</h3>
                     <p className="text-center">
                         Descubre el poder de Phoenix Group: tu socio estratégico para soluciones de marketing, diseño
