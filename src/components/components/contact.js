@@ -46,12 +46,12 @@ const Contact = () => {
             <div className="container mt-5">
                 <section>
                     <h2 className="text-center mb-4">Contacta con Nosotros</h2>
-                    <p>
+                    <p className="text-center text-muted">
                         Estamos aquí para responder a tus preguntas y discutir cómo podemos ayudarte a alcanzar tus
                         objetivos. Puedes contactarnos a través de los siguientes métodos:
                     </p>
                     <div>
-                        <h3>Información de Contacto</h3>
+                        <h3 className="mb-3">Información de Contacto</h3>
                         <p>
                             <strong>Dirección:</strong> Online
                         </p>
@@ -62,8 +62,8 @@ const Contact = () => {
                             <strong>Teléfono:</strong> 633391411
                         </p>
                     </div>
-                    <div>
-                        <h3>Formulario de Contacto</h3>
+                    <div className="mt-4 pb-5">
+                        <h3 className="mb-3">Formulario de Contacto</h3>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3">
                                 <label htmlFor="nombre" className="form-label">
@@ -121,14 +121,14 @@ const Contact = () => {
                                     required
                                 />
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{ marginBottom: '10%', backgroundColor: '#2c3e50' }}>
+                            <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#2c3e50' }}>
                                 Enviar Mensaje
                             </button>
+                            {isFormSubmitted && (
+                                <p className="text-success mt-3">¡El mensaje se envió correctamente!</p>
+                            )}
                         </form>
-                        {isFormSubmitted && (
-                            <p className="text-success mt-3">¡El mensaje se envió correctamente!</p>
-                        )}
-                    </div>
+                    </div >
                 </section>
             </div>
         </Layout>

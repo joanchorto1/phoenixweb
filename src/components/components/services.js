@@ -1,4 +1,5 @@
 import Layout from "../layout/layout";
+import {Link} from "react-router-dom";
 
 const Services = () => {
     return (
@@ -6,15 +7,15 @@ const Services = () => {
         <Layout>
             <div className="container mt-5">
                 <section style={{marginBottom:'10%'}}>
-                    <h2 className="text-center mb-4">Nuestros Servicios</h2>
+                    <h2 className={"text-center"}>Nuestros Servicios</h2>
                     <p>
                         En Phoenix Group, ofrecemos una gama completa de servicios diseñados para potenciar
                         tu presencia en línea y satisfacer tus necesidades de marketing y desarrollo. Nuestro equipo
                         de profesionales altamente capacitados está listo para brindar soluciones personalizadas que
                         se alineen con tus objetivos comerciales.
                     </p>
-                    <div>
-                        <h3>Marketing Digital</h3>
+                    <div >
+                        <h3 >Marketing Digital</h3>
                         <p>
                             Nuestra experiencia en marketing digital abarca desde la gestión de redes sociales hasta
                             estrategias de generación de leads. Creamos campañas efectivas que conectan tu marca con
@@ -26,7 +27,7 @@ const Services = () => {
                             generan resultados tangibles.
                         </p>
                     </div>
-                    <div>
+                    <div >
                         <h3>Desarrollo Web</h3>
                         <p>
                             Nuestro equipo de desarrolladores web se especializa en la creación de soluciones
@@ -40,7 +41,7 @@ const Services = () => {
                             una historia de innovación y excelencia.
                         </p>
                     </div>
-                    <div>
+                    <div >
                         <h3>Diseño Gráfico</h3>
                         <p>
                             El diseño gráfico es una parte integral de la identidad de marca. En Phoenix Group,
@@ -53,7 +54,7 @@ const Services = () => {
                             Cada diseño cuenta una historia única y se adapta a tus necesidades comerciales específicas.
                         </p>
                     </div>
-                    <div>
+                    <div >
                         <h3>Gestión de Eventos</h3>
                         <p>
                             En Phoenix Group, entendemos que la organización de eventos es una oportunidad para
@@ -67,11 +68,17 @@ const Services = () => {
                             cada aspecto y brindarte una experiencia sin complicaciones.
                         </p>
                     </div>
-                    <p>
-                        En Phoenix Group, nuestros servicios van más allá de lo convencional. Somos tu socio
-                        estratégico en el viaje hacia el éxito. ¡Descubre cómo podemos potenciar tu negocio y hacerlo
-                        destacar en el mercado!
-                    </p>
+                    <div className={"text-center pt-4"} >
+                        <p>
+                            En Phoenix Group, nuestros servicios van más allá de lo convencional. Somos tu socio
+                            estratégico en el viaje hacia el éxito. ¡Descubre cómo podemos potenciar tu negocio y hacerlo
+                            destacar en el mercado!
+                        </p>
+                        <Link to="/contact" className="btn btn-primary text-center" style={{ backgroundColor: '#2c3e50', color: '#fff' }}>
+                            Contacta con Nosotros
+                        </Link>
+                    </div>
+
                 </section>
             </div>
         </Layout>

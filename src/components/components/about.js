@@ -6,7 +6,7 @@ import React from "react";
 const About = () => {
     return (
         <Layout>
-            <div className={"container"} style={{marginTop:'10%'}}>
+            <div className={"container pt-4"} >
                 <section  className={"justify-content-around"} style={{marginBottom:'10%' }}>
                     <h2 className="text-center mb-4">Acerca de Nosotros</h2>
                     <p>

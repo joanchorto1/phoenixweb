@@ -89,7 +89,7 @@ const Home = () => {
                 </Carousel>
                 {/*<Button  variant="outline-light" href={"/clients"} style={{ marginTop: '5%', backgroundColor: '#2c3e50' }}>Ver más clientes</Button>*/}
             </section>
-            <section className="mb-5 text-center text-white pb-3" style={{backgroundColor:'#2c3e50'}}>
+            <section className="mb-5 text-center text-white pb-3 pt-4" style={{backgroundColor:'#2c3e50'}}>
                 <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
                 <p>
                     Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Estamos aquí para ofrecerte
