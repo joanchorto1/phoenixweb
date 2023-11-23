@@ -24,9 +24,9 @@ const Layout = ({ children }) => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="/services" style={{ fontSize: '1.2rem', color: '#fff' }}>Servicios</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/clients" style={{ fontSize: '1.2rem', color: '#fff' }}>Clientes</a>
-                                </li>
+                                {/*<li className="nav-item">*/}
+                                {/*    <a className="nav-link" href="/clients" style={{ fontSize: '1.2rem', color: '#fff' }}>Clientes</a>*/}
+                                {/*</li>*/}
                                 <li className="nav-item ">
                                     <a className="nav-link" href="/about" style={{ fontSize: '1.2rem', color: '#fff' }}>SobreNosotros</a>
                                 </li>
@@ -42,20 +42,31 @@ const Layout = ({ children }) => {
             <main>{children}</main>
 
             <footer style={{ backgroundColor: '#2c3e50', color: '#fff', padding: '2rem 0' }}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3 w-25">
-                            <img className="navbar-logo w-75" src={logoImage2} alt="" />
-                        </div>
-                        <div className="col-md-6">
-                            <h5>Contacto</h5>
-                            <p>Dirección: Tu dirección</p>
-                            <p>Email: tu@email.com</p>
-                            <p>Teléfono: +123 456 789</p>
-                        </div>
+                <div className="container d-flex align-items-center justify-content-between">
+                    <div className="col-md-3 w-25">
+                        <img className="navbar-logo w-50" src={logoImage2} alt="" />
+                    </div>
+                    <div className="col-md-6">
+                        <h5>Contacto</h5>
+                        <p>Dirección: Online</p>
+                        <p>Email: info@phoenixgrp.es</p>
+                        <p>Teléfono: 633 391 411</p>
+                    </div>
+
+                    {/* Enlaces a las páginas importantes */}
+                    <div className="col-md-3">
+                        <h5>Enlaces</h5>
+
+                            <p> <a href="/privacy-policy" className="text-white">Política de Privacidad</a></p>
+                            <p> <a href="/cookie-notice" className="text-white">Aviso de Cookies</a></p>
+                            <p><a href="/terms-and-conditions" className="text-white">Términos y Condiciones</a></p>
+
+
+
                     </div>
                 </div>
             </footer>
+
         </>
     );
 };

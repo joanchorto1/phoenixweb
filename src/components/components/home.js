@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Card, Carousel } from 'react-bootstrap';
 import Layout from "../layout/layout";
+import LogoVidal from "../img/tomasvidal.png"
+import LogoGastromar from "../img/Selecció_161.png"
 
 const growthData = [
     { month: 'Mes 1', leads: 50 },
@@ -52,26 +54,77 @@ const Home = () => {
             </section>
 
             {/* Carrusel de Logos */}
+
+            <section className="mb-5 text-center" style={{backgroundColor:'#2c3e50'}}>
+                <h2 className="mb-4 text-white" style={{backgroundColor:'#2c3e50'}}>Nuestra Fortaleza</h2>
+                <div className="row text-white" style={{backgroundColor:'#2c3e50'}}>
+                    <div className="col-md-8 offset-md-2">
+                        <p>
+                            En Phoenix Group, nos destacamos por nuestra capacidad para fusionar creatividad y tecnología.
+                            Nuestra fortaleza radica en la creación de soluciones innovadoras que impulsan el crecimiento de
+                            nuestros clientes.
+                        </p>
+                        <p>
+                            Con un equipo altamente calificado y un enfoque centrado en el cliente, trabajamos para convertir
+                            ideas en resultados tangibles. Desde estrategias de marketing efectivas hasta desarrollo web
+                            personalizado, estamos aquí para impulsar tu negocio hacia el éxito.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <section className="mb-5 text-center">
                 <h2 className="mb-4">Nuestros Clientes</h2>
                 <Carousel className="d-inline">
                     <Carousel.Item>
-                        <img className="d-inline w-25"
-                             src="https://www.dsigno.es/blog/wp-content/uploads/2022/05/Movistar-Logo-300x169.png"
-                             alt="Cliente 1" />
+                        <img className="d-inline w-25 h25"
+                             src={LogoVidal}
+                             alt="Piscines Tomas Vidal SL" />
                         {/* Agregar más elementos del carrusel según sea necesario */}
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="d-inline w-25"
-                             src="https://www.dsigno.es/blog/wp-content/uploads/2022/05/Logo_Corte_Ingles.svg_-300x169.png"
-                             alt="Cliente 2" />
+                             src={LogoGastromar}   alt="Gastromar Tortosa" />
                         {/* Agregar más elementos del carrusel según sea necesario */}
                     </Carousel.Item>
                 </Carousel>
-                <Button  variant="outline-light" href={"/clients"} style={{ marginTop: '5%', backgroundColor: '#2c3e50' }}>Ver más clientes</Button>
+                {/*<Button  variant="outline-light" href={"/clients"} style={{ marginTop: '5%', backgroundColor: '#2c3e50' }}>Ver más clientes</Button>*/}
+            </section>
+            <section className="mb-5 text-center text-white pb-3" style={{backgroundColor:'#2c3e50'}}>
+                <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
+                <p>
+                    Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Estamos aquí para ofrecerte
+                    soluciones personalizadas que se alinean con tus objetivos comerciales.
+                </p>
+                <div style={{backgroundColor: '#2c3e50',width: '100%', alignItems:'center'}} className={'mb-4'}>
+                    <Button variant="outline-light" className="mt-4"><a href="/contact" style={{ color: "white" }}>Contacta ahora!</a></Button>
+                </div>
             </section>
 
-            {/* Información de Servicios */}
+            <section className="mb-5 text-center">
+                <h2 className="mb-4 mt-3">Crecimiento de Clientes</h2>
+                <div className="row">
+                    <div className="col-md-12">
+                        <svg viewBox="0 0 100 100" width="100%" height="200">
+                            <path d={calculatePath()} fill="none" stroke="#3498db" strokeWidth="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div className="row mt-3">
+                    {growthData.map((data) => (
+                        <div key={data.month} className="col-md-2">
+                            <p className="mb-0">{data.month}</p>
+                            <p className="font-weight-bold">{data.leads} Leads</p>
+                        </div>
+                    ))}
+                </div>
+                <div className="mt-3">
+                    <a style={{backgroundColor:'#2c3e50'}} href="/contact" className="btn btn-primary">
+                        Contacta
+                    </a>
+                </div>
+            </section>
+
+
             <section className="text-center " style={{backgroundColor: '#2c3e50', paddingTop:'2%'}}>
                 <h2 className="mb-4  text-white">Nuestros Servicios</h2>
                 <div className="row" >
@@ -87,7 +140,7 @@ const Home = () => {
 
                     <div className="col-md-12 mb-4">
                         <div style={{backgroundColor: '#2c3e50'}} className="shadow p-3 mb-5 text-white rounded">
-                            <h5 className="mt-3">DESARROLLO IT</h5>
+                            <h5 className="mt-3">DESARROLLO WEB</h5>
                             <p>
                                 Desarrollamos software personalizado, implementamos sistemas ERP para una gestión
                                 empresarial eficiente y creamos aplicaciones web innovadoras.
@@ -122,96 +175,6 @@ const Home = () => {
 
             </section>
 
-            {/*Grafico*/}
-            <section className="mb-5 text-center">
-                <h2 className="mb-4 mt-3">Crecimiento de Clientes</h2>
-                <div className="row">
-                    <div className="col-md-12">
-                        <svg viewBox="0 0 100 100" width="100%" height="200">
-                            <path d={calculatePath()} fill="none" stroke="#3498db" strokeWidth="2" />
-                        </svg>
-                    </div>
-                </div>
-                <div className="row mt-3">
-                    {growthData.map((data) => (
-                        <div key={data.month} className="col-md-2">
-                            <p className="mb-0">{data.month}</p>
-                            <p className="font-weight-bold">{data.leads} Leads</p>
-                        </div>
-                    ))}
-                </div>
-                <div className="mt-3">
-                    <a style={{backgroundColor:'#2c3e50'}} href="/contact" className="btn btn-primary">
-                        Contacta
-                    </a>
-                </div>
-            </section>
-            {/* Tarjetas de Tarifas */}
-            <section className="mb-5 mt-3 text-center" style={{backgroundColor: '#2c3e50', paddingBottom:'5%'}} >
-                <h2 className="mb-4 pt-3 text-white" >Nuestras Tarifas</h2>
-                <div className="row">
-                    <div className="col-md-4">
-                        <Card className="h-100 border-0 shadow">
-                            <Card.Body className="d-flex flex-column">
-                                <Card.Title className="text-center mb-3">Phoenix Estándar</Card.Title>
-                                <Card.Text className="flex-grow-1">
-                                    <ul className="list-unstyled">
-                                        <li>1 proyecto a la vez</li>
-                                        <li>Entrega de 5-7 días</li>
-                                        <li>LandingPage</li>
-                                        <li>Gestión RRSS</li>
-                                        <li>Diseño gráfico</li>
-                                    </ul>
-                                </Card.Text>
-                                <Card.Text className="text-center mb-3 text-muted">Precio: 200€/mes</Card.Text>
-                                <Button style={{backgroundColor: '#2c3e50'}} variant="outline-light" href={"/contact"} className="align-self-end">
-                                    Contrátanos
-                                </Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div className="col-md-4">
-                        <Card className="h-100 border-0 shadow">
-                            <Card.Body className="d-flex flex-column">
-                                <Card.Title className="text-center mb-3">Pro Phoenix</Card.Title>
-                                <Card.Text className="flex-grow-1">
-                                    <ul className="list-unstyled">
-                                        <li>2 proyectos a la vez</li>
-                                        <li>Entrega de 5-7 días</li>
-                                        <li>LandingPage</li>
-                                        <li>Gestión RRSS</li>
-                                        <li>Diseño gráfico</li>
-                                    </ul>
-                                </Card.Text>
-                                <Card.Text className="text-center mb-3 text-muted">Precio: 220€/mes</Card.Text>
-                                <Button style={{backgroundColor: '#2c3e50'}} variant="outline-light" href={"/contact"} className="align-self-end">
-                                    Contrátanos
-                                </Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div className="col-md-4">
-                        <Card className="h-100 border-0 shadow">
-                            <Card.Body className="d-flex flex-column">
-                                <Card.Title className="text-center mb-3">Phoenix Deluxe</Card.Title>
-                                <Card.Text className="flex-grow-1">
-                                    <ul className="list-unstyled">
-                                        <li>4 proyectos a la vez</li>
-                                        <li>Entrega de 5-7 días</li>
-                                        <li>LandingPage</li>
-                                        <li>Gestión RRSS</li>
-                                        <li>Diseño gráfico</li>
-                                    </ul>
-                                </Card.Text>
-                                <Card.Text className="text-center mb-3 text-muted">Precio: 300€/mes</Card.Text>
-                                <Button style={{backgroundColor: '#2c3e50'}} variant="outline-light" href={"/contact"} className="align-self-end">
-                                    Contrátanos
-                                </Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                </div>
-            </section>
         </Layout>
     );
 };

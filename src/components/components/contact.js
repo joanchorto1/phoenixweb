@@ -1,12 +1,20 @@
 import Layout from "../layout/layout";
-
+import emailjs from 'emailjs-com';
+import React from "react";
 const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Agregar lógica para manejar el envío del formulario
+
+        // Configurar el servicio Email.js
+        emailjs.sendForm('service_0md04a8', 'template_4wu4rsh', e.target, 'user_your_user_id')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
         console.log('Formulario enviado');
     };
-
     return (
         <Layout>
             <div className="container mt-5">
@@ -19,10 +27,10 @@ const Contact = () => {
                     <div>
                         <h3>Información de Contacto</h3>
                         <p>
-                            <strong>Dirección:</strong> Amposta
+                            <strong>Dirección:</strong> Online
                         </p>
                         <p>
-                            <strong>Email:</strong> info@phoenixcommunication.com
+                            <strong>Email:</strong> info@phoenixgrp.es
                         </p>
                         <p>
                             <strong>Teléfono:</strong> 633391411
@@ -38,6 +46,12 @@ const Contact = () => {
                                 <input type="text" className="form-control" id="nombre" name="nombre" required />
                             </div>
                             <div className="mb-3">
+                                <label htmlFor="empresa" className="form-label">
+                                    Empresa:
+                                </label>
+                                <input type="text" className="form-control" id="empresa" name="empresa" required />
+                            </div>
+                            <div className="mb-3">
                                 <label htmlFor="email" className="form-label">
                                     Email:
                                 </label>
@@ -49,7 +63,7 @@ const Contact = () => {
                                 </label>
                                 <textarea className="form-control" id="mensaje" name="mensaje" rows="4" required />
                             </div>
-                            <button  type="submit" className="btn btn-primary" style={{marginBottom:'10%', backgroundColor: '#2c3e50'}}>
+                            <button type="submit" className="btn btn-primary" style={{ marginBottom: '10%', backgroundColor: '#2c3e50' }}>
                                 Enviar Mensaje
                             </button>
                         </form>
