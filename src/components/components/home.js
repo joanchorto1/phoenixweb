@@ -51,7 +51,7 @@ const Home = () => {
             </section>
 
             {/* Carrusel de Logos */}
-            <section className="mb-5 text-center" style={{ backgroundColor: '#2c3e50' }}>
+            <section className="mb-5 text-center pt-4 pb-3" style={{ backgroundColor: '#2c3e50' }}>
                 <h2 className="mb-4 text-white">Nuestra Fortaleza</h2>
                 <div className="row text-white" style={{ backgroundColor: '#2c3e50' }}>
                     <div className="col-md-8 offset-md-2">
@@ -99,7 +99,46 @@ const Home = () => {
                     <Button variant="outline-light" className="mt-4"><a href="/contact" style={{ color: "white" }}>Contacta ahora</a></Button>
                 </div>
             </section>
+            {/*Proceso de trabajo*/}
+            <section className="mb-5 text-center">
+                <h2 className="mb-4">Nuestro Proceso de Trabajo</h2>
 
+                <div className="row justify-content-center">
+                    <div className="col-md-8">
+                        <div className="mb-4">
+                            <h3>Paso 1: Consulta Inicial</h3>
+                            <p>
+                                Comenzamos con una consulta para comprender tus objetivos, necesidades y requisitos específicos.
+                            </p>
+                        </div>
+
+                        <div className="mb-4">
+                            <h3>Paso 2: Estrategia Personalizada</h3>
+                            <p>
+                                Desarrollamos una estrategia personalizada que se alinee con tus metas comerciales y maximice los resultados.
+                            </p>
+                        </div>
+
+                        <div className="mb-4">
+                            <h3>Paso 3: Implementación y Desarrollo</h3>
+                            <p>
+                                Ponemos en marcha la estrategia acordada, ya sea a través de campañas de marketing, desarrollo web o diseño gráfico.
+                            </p>
+                        </div>
+
+                        <div className="mb-4">
+                            <h3>Paso 4: Seguimiento y Optimización</h3>
+                            <p>
+                                Realizamos un seguimiento continuo de los resultados y ajustamos la estrategia según sea necesario para mejorar el rendimiento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div >
+                    <Button style={{backgroundColor:'#2c3e50'}} variant="outline-light" className="mt-4"><a href="/contact" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
+                </div>
+            </section>
             {/* Sección de Crecimiento de Clientes */}
             <section className="mb-5 text-center">
                 <h2 className="mb-4 mt-3">Crecimiento de Clientes</h2>
