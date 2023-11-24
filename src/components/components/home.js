@@ -168,51 +168,62 @@ const Home = () => {
             <section className="text-center " style={{ backgroundColor: '#2c3e50', paddingTop: '2%' }}>
                 <h2 className="mb-4  text-white">Nuestros Servicios</h2>
                 <div className="row" >
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-6 mb-4">
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Marketing Digital</h5>
                             <p>
                                 Ofrecemos soluciones integrales de marketing digital, desde la gestión de redes sociales
-                                hasta estrategias avanzadas de generación de leads.
+                                hasta estrategias avanzadas de generación de leads, optimizando la visibilidad y el compromiso.
+                            </p>
+                            <p>
+                                SEO, Redes Sociales, Estrategias de Marketing Digital
                             </p>
                         </div>
                     </div>
 
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-6 mb-4">
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Desarrollo Web</h5>
                             <p>
                                 Desarrollamos software personalizado, implementamos sistemas ERP para una gestión
-                                empresarial eficiente y creamos aplicaciones web innovadoras.
+                                empresarial eficiente y creamos aplicaciones web innovadoras, adaptadas a tus necesidades.
+                            </p>
+                            <p>
+                                Desarrollo de Software, Sistemas ERP, Aplicaciones Web
                             </p>
                         </div>
                     </div>
 
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-6 mb-4">
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Diseño Gráfico</h5>
                             <p>
                                 Transformamos ideas en imágenes impactantes, desde el diseño de logos y carteles hasta
-                                la creación de contenido visual para redes sociales.
+                                la creación de contenido visual para redes sociales, destacando tu marca en un mundo visualmente competitivo.
+                            </p>
+                            <p>
+                                Diseño de Logos, Diseño Gráfico Impactante, Contenido Visual para Redes Sociales
                             </p>
                         </div>
                     </div>
 
-                    <div className="col-md-12 ">
+                    <div className="col-md-6 ">
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Gestión de Eventos</h5>
                             <p>
                                 Nos encargamos de la organización completa de eventos, desde la planificación hasta la
-                                ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras.
+                                ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras, para eventos memorables y exitosos.
+                            </p>
+                            <p>
+                                Organización de Eventos, Planificación de Eventos, Eventos Memorables
                             </p>
                         </div>
                     </div>
                     <div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>
-                        <Button variant="outline-light" className="mt-4"><a href="/services" style={{ color: "white" }}>Saber más</a></Button>
+                        <Button variant="outline-light" className="mt-4"><a href="/services" style={{ color: "white" }}>Descubre más</a></Button>
                     </div>
                 </div>
             </section>
-
         </Layout>
     );
 };

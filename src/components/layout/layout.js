@@ -30,6 +30,9 @@ const Layout = ({ children }) => {
                                 <li className="nav-item ">
                                     <a className="nav-link" href="/about" style={{ fontSize: '1.2rem', color: '#fff' }}>SobreNosotros</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/blog" style={{ fontSize: '1.2rem', color: '#fff' }}>Blog</a>
+                                </li>
                                 <li className="nav-item ">
                                        <a className="nav-link  " href="/contact" style={{ fontSize: '1.2rem', color: '#fff' }}>Contacta</a>
                                 </li>
