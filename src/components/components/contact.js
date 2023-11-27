@@ -45,13 +45,13 @@ const Contact = () => {
         <Layout>
             <div className="container mt-5">
                 <section>
-                    <h2 className="text-center mb-4">Contacta con Nosotros</h2>
+                    <h1 className="text-center mb-4">Contacta con Nosotros</h1>
                     <p className="text-center text-muted">
                         Estamos aquí para responder a tus preguntas y discutir cómo podemos ayudarte a alcanzar tus
                         objetivos. Puedes contactarnos a través de los siguientes métodos:
                     </p>
                     <div>
-                        <h3 className="mb-3">Información de Contacto</h3>
+                        <h2 className="mb-3">Información de Contacto</h2>
                         <p>
                             <strong>Dirección:</strong> Online
                         </p>
@@ -63,7 +63,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="mt-4 pb-5">
-                        <h3 className="mb-3">Formulario de Contacto</h3>
+                        <h2 className="mb-3">Formulario de Contacto</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3">
                                 <label htmlFor="nombre" className="form-label">

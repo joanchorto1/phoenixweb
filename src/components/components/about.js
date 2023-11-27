@@ -8,7 +8,7 @@ const About = () => {
         <Layout>
             <div className={"container pt-4"} >
                 <section  className={"justify-content-around"} style={{marginBottom:'10%' }}>
-                    <h2 className="text-center mb-4">Acerca de Nosotros</h2>
+                    <h1 className="text-center mb-4">Acerca de Nosotros</h1>
                     <p>
                         En Phoenix Group, no solo creamos soluciones; creamos conexiones significativas.
                         Nuestra historia es una fusión de creatividad, innovación y dedicación. Como una empresa joven
@@ -22,7 +22,7 @@ const About = () => {
                         innovación.
                     </p>
                     <div>
-                        <h3>Nuestra Filosofía</h3>
+                        <h2>Nuestra Filosofía</h2>
                         <p>
                             En Phoenix, creemos en la poderosa combinación de la creatividad y la tecnología. Esta
                             filosofía impulsa cada proyecto que emprendemos. Nos esforzamos por ofrecer soluciones
@@ -31,7 +31,7 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <h3>Nuestra Visión</h3>
+                        <h2>Nuestra Visión</h2>
                         <p>
                             Nuestra visión es ser líderes en la industria, marcando la pauta en términos de innovación
                             y calidad. Buscamos transformar la manera en que las empresas abordan el marketing y el
@@ -40,7 +40,7 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <h3>Compromiso con la Excelencia</h3>
+                        <h2>Compromiso con la Excelencia</h2>
                         <p>
                             En cada proyecto, nos comprometemos con la excelencia en cada detalle. Desde el diseño
                             gráfico hasta el desarrollo web y la gestión de eventos, perseguimos la perfección con

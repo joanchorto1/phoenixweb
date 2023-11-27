@@ -7,14 +7,14 @@ const Blog = () => {
     return (
         <Layout>
             <div className="container mt-5">
-                <h2 className="text-center">Blog de Phoenix Group</h2>
+                <h1 className="text-center">Blog de Phoenix Group</h1>
 
                 {/* Sección de Marketing Digital */}
                 <section className="mb-4">
-                    <h3 className="section-title pb-3">Marketing Digital</h3>
+                    <h2 className="section-title pb-3">Marketing Digital</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white mb-4">
                         <div className="card-body">
-                            <h4 className="card-title">5 Estrategias para Mejorar tu Presencia en Redes Sociales</h4>
+                            <h3 className="card-title">5 Estrategias para Mejorar tu Presencia en Redes Sociales</h3>
                             <p className="card-text">
                                 Descubre las mejores prácticas para destacar en las redes sociales y aumentar la visibilidad de tu marca.
                             </p>
@@ -24,7 +24,7 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white">
                         <div className="card-body">
-                            <h4 className="card-title">Guía Completa de Email Marketing para Principiantes</h4>
+                            <h3 className="card-title">Guía Completa de Email Marketing para Principiantes</h3>
                             <p className="card-text">
                                 Aprende los secretos detrás de una campaña de email marketing efectiva y cómo llegar a tu audiencia de manera impactante.
                             </p>
@@ -35,10 +35,10 @@ const Blog = () => {
 
                 {/* Sección de Desarrollo Web */}
                 <section className="mb-4">
-                    <h3 className="section-title pb-3">Desarrollo Web</h3>
+                    <h2 className="section-title pb-3">Desarrollo Web</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white mb-4">
                         <div className="card-body">
-                            <h4 className="card-title">Tendencias Actuales en Desarrollo Web: Lo que Debes Saber</h4>
+                            <h3 className="card-title">Tendencias Actuales en Desarrollo Web: Lo que Debes Saber</h3>
                             <p className="card-text">
                                 Exploramos las últimas tendencias en desarrollo web y cómo pueden impactar positivamente tu presencia en línea.
                             </p>
@@ -48,7 +48,7 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white">
                         <div className="card-body">
-                            <h4 className="card-title">Cómo Elegir la Plataforma de Desarrollo Adecuada para tu Sitio Web</h4>
+                            <h3 className="card-title">Cómo Elegir la Plataforma de Desarrollo Adecuada para tu Sitio Web</h3>
                             <p className="card-text">
                                 Una guía detallada para ayudarte a seleccionar la plataforma de desarrollo web que mejor se adapte a tus necesidades.
                             </p>
@@ -59,10 +59,10 @@ const Blog = () => {
 
                 {/* Sección de Diseño Gráfico */}
                 <section className="mb-4">
-                    <h3 className="section-title pb-3">Diseño Gráfico</h3>
+                    <h2 className="section-title pb-3">Diseño Gráfico</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-4">
                         <div className="card-body">
-                            <h4 className="card-title">Principios Básicos del Diseño Gráfico que Todo Emprendedor Debe Conocer</h4>
+                            <h3 className="card-title">Principios Básicos del Diseño Gráfico que Todo Emprendedor Debe Conocer</h3>
                             <p className="card-text">
                                 Descubre los principios esenciales del diseño gráfico y cómo aplicarlos para mejorar la imagen de tu marca.
                             </p>
@@ -72,7 +72,7 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white ">
                         <div className="card-body">
-                            <h4 className="card-title">Cómo Crear un Logotipo Impactante: Guía Paso a Paso</h4>
+                            <h3 className="card-title">Cómo Crear un Logotipo Impactante: Guía Paso a Paso</h3>
                             <p className="card-text">
                                 Una guía detallada para diseñar un logotipo memorable que represente la identidad única de tu empresa.
                             </p>
@@ -83,10 +83,10 @@ const Blog = () => {
 
                 {/* Sección de Gestión de Eventos */}
                 <section>
-                    <h3 className="section-title pb-3">Gestión de Eventos</h3>
+                    <h2 className="section-title pb-3">Gestión de Eventos</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-5">
                         <div className="card-body">
-                            <h4 className="card-title">Claves para una Organización Exitosa de Eventos Corporativos</h4>
+                            <h3 className="card-title">Claves para una Organización Exitosa de Eventos Corporativos</h3>
                             <p className="card-text">
                                 Descubre las claves para organizar eventos corporativos exitosos que dejen una impresión duradera en tus invitados.
                             </p>
@@ -96,7 +96,7 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-4">
                         <div className="card-body">
-                            <h4 className="card-title">Cómo Elegir el Mejor Espacio para tu Evento Empresarial</h4>
+                            <h3 className="card-title">Cómo Elegir el Mejor Espacio para tu Evento Empresarial</h3>
                             <p className="card-text">
                                 Una guía práctica para seleccionar el espacio perfecto que se alinee con la visión de tu evento empresarial.
                             </p>

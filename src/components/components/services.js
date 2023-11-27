@@ -54,7 +54,7 @@ const Services = () => {
         <Layout>
             <div className="container mt-5">
                 <section style={{ marginBottom: "10%" }}>
-                    <h2 className={"text-center"}>Nuestros Servicios</h2>
+                    <h1 className={"text-center"}>Nuestros Servicios</h1>
                     <div className="row">
                         {servicesData.map((service, index) => (
                             <div key={index} className="col-md-6 mb-4">
@@ -62,7 +62,7 @@ const Services = () => {
                                     style={{ backgroundColor: "#2c3e50" }}
                                     className="shadow p-3 mb-5 text-white rounded"
                                 >
-                                    <h3 className="mt-3">{service.title}</h3>
+                                    <h2 className="mt-3">{service.title}</h2>
                                     <p>{service.summary}</p>
                                     <ul>
                                         {service.offerings.map((offering, idx) => (
