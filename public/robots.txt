@@ -1,3 +1,6 @@
 User-agent: *
+Allow: /public/
+Allow: /src/
 Disallow: /admin/
+Sitemap: https://phoenixgrp.es/sitemap.xml
 
