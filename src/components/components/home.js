@@ -40,7 +40,7 @@ const Home = () => {
             }}>
                 <div className="container text-center">
                     <h1 className={"mb-4"}>Phoenix Group</h1>
-                    <h3>Agencia de Marketing Digital, Diseño Gráfico y Desarrollo Web en Tarragona y el Delta de l'Ebre</h3>
+                    <h2>Agencia de Marketing Digital, Diseño Gráfico y Desarrollo Web en Tarragona y el Delta de l'Ebre</h2>
                     <p className="text-center">
                         Descubre el poder de Phoenix Group, tu socio estratégico para soluciones de marketing, diseño
                         gráfico y desarrollo web. Fusionamos creatividad y tecnología para llevar tu negocio al siguiente nivel.
