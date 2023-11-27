@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <link rel="icon" href="%PUBLIC_URL%/phoenixlogo2.png"/>
     <link rel="canonical" href="https://phoenixgrp.es/"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
-    <title>Phoenix Group - Tu Socio en Marketing y Desarrollo Web</title>
-
+    <title>Phoenix Group - Tu Socio en Marketing Digital y Desarrollo Web en Tarragona </title>
+    <link rel="canonical" href="https://phoenixgrp.es/" id="canonicalLink"/>
     <meta name="google-site-verification" content="7ETb0rTzWfAErgquFOJwhsX2doJqN2I9K_csj7PdUTc" />
 
 
     <meta name="description"
-          content="Ofrecemos servicios de marketing digital, desarrollo web, diseño gráfico y gestión de eventos. ¡Potencia tu presencia en línea con Phoenix Group!">
+          content="Ofrecemos servicios de marketing digital, desarrollo web, diseño gráfico y gestión de eventos. Empresa esn crecimiento en Tarragona ¡Potencia tu presencia en línea con Phoenix Group!">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-NlTjXq9iJQosOe8Fh1fMzHfXFBMlN73BYKpgA1z8G1FJ3EAAkFRJC7eYq2G6Lb5"
@@ -44,11 +44,40 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    --><script type="application/ld+json">
+    {
+        "@context": "https://phoenixgrp.es",
+        "@type": "Agencia de marqueting en tarragona",
+        "name": "Phoenix Group",
+        "description": "Especialistes en Marketing Digital, Disseny Gràfic i Desenvolupament Web a Tarragona",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Online",
+            "addressLocality": "Tarragona",
+            "postalCode": "43001",
+            "addressRegion": "Tarragona"
+        },
+        "telephone": "+34-633-391-411",
+        "url": "https://phoenixgrp.es/",
+        "image": "https://phoenixgrp.es/phoenixlogo2.png",
+        "openingHours": "Mo, Tu, We, Th, Fr 09:00-17:00",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.1134,
+            "longitude": 1.2509
+        }
+    }
+</script>
 
 </head>
 <body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
+<script>
+    // Obtiene la ruta del archivo actual
+    var currentPath = window.location.pathname;
+
+    // Actualiza la etiqueta canonical con la ruta actual
+    document.getElementById('canonicalLink').href = "https://phoenixgrp.es" + currentPath;
+</script>
 <div id="root"></div>
 <!--
   This HTML file is a template.
@@ -60,5 +89,6 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
+
 </body>
 </html>
