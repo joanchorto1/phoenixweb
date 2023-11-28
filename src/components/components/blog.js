@@ -14,9 +14,9 @@ const Blog = () => {
                     <h2 className="section-title pb-3">Marketing Digital</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white mb-4">
                         <div className="card-body">
-                            <h3 className="card-title">5 Estrategias para Mejorar tu Presencia en Redes Sociales</h3>
+                            <h3 className="card-title">Cómo una Estrategia Integral de Marketing Digital Puede Impulsar tu Negocio en Tarragona</h3>
                             <p className="card-text">
-                                Descubre las mejores prácticas para destacar en las redes sociales y aumentar la visibilidad de tu marca.
+                                Explora la importancia de una estrategia de marketing digital completa, desde SEO local hasta campañas en redes sociales, y cómo puede beneficiar a las empresas en Tarragona.
                             </p>
                             <Link to="/blog/marketing1" className="btn btn-light">Leer más</Link>
                         </div>
@@ -24,9 +24,9 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white">
                         <div className="card-body">
-                            <h3 className="card-title">Guía Completa de Email Marketing para Principiantes</h3>
+                            <h3 className="card-title">Secretos del Éxito en el Marketing Online: Estrategias Digitales para Sobresalir en el Delta de l'Ebre</h3>
                             <p className="card-text">
-                                Aprende los secretos detrás de una campaña de email marketing efectiva y cómo llegar a tu audiencia de manera impactante.
+                                Analiza estrategias efectivas de marketing online específicas para el Delta de l'Ebre, aprovechando las oportunidades digitales en esta región única.
                             </p>
                             <Link to="/blog/marketing2" className="btn btn-light">Leer más</Link>
                         </div>
@@ -38,9 +38,9 @@ const Blog = () => {
                     <h2 className="section-title pb-3">Desarrollo Web</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white mb-4">
                         <div className="card-body">
-                            <h3 className="card-title">Tendencias Actuales en Desarrollo Web: Lo que Debes Saber</h3>
+                            <h3 className="card-title">El Papel Fundamental del Diseño Web en el Éxito Empresarial en Tarragona</h3>
                             <p className="card-text">
-                                Exploramos las últimas tendencias en desarrollo web y cómo pueden impactar positivamente tu presencia en línea.
+                                Examina cómo un diseño web efectivo contribuye al éxito empresarial en Tarragona, desde la usabilidad hasta la optimización para motores de búsqueda.
                             </p>
                             <Link to="/blog/desarrollo1" className="btn btn-light">Leer más</Link>
                         </div>
@@ -48,9 +48,9 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card  text-white">
                         <div className="card-body">
-                            <h3 className="card-title">Cómo Elegir la Plataforma de Desarrollo Adecuada para tu Sitio Web</h3>
+                            <h3 className="card-title">Desarrollo Web en el Delta de l'Ebre: Tendencias que Debes Conocer</h3>
                             <p className="card-text">
-                                Una guía detallada para ayudarte a seleccionar la plataforma de desarrollo web que mejor se adapte a tus necesidades.
+                                Explora las últimas tendencias en desarrollo web y cómo aplicarlas estratégicamente en el contexto del Delta de l'Ebre.
                             </p>
                             <Link to="/blog/desarrollo2" className="btn btn-light">Leer más</Link>
                         </div>
@@ -62,9 +62,9 @@ const Blog = () => {
                     <h2 className="section-title pb-3">Diseño Gráfico</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-4">
                         <div className="card-body">
-                            <h3 className="card-title">Principios Básicos del Diseño Gráfico que Todo Emprendedor Debe Conocer</h3>
+                            <h3 className="card-title">El Impacto del Diseño de Logotipos en la Identidad de Marca: Construyendo una Imagen Duradera</h3>
                             <p className="card-text">
-                                Descubre los principios esenciales del diseño gráfico y cómo aplicarlos para mejorar la imagen de tu marca.
+                                Examina cómo el diseño gráfico impacta las estrategias de marketing digital y cómo puedes destacar en el mercado de Tarragona.
                             </p>
                             <Link to="/blog/diseno1" className="btn btn-light">Leer más</Link>
                         </div>
@@ -72,9 +72,9 @@ const Blog = () => {
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white ">
                         <div className="card-body">
-                            <h3 className="card-title">Cómo Crear un Logotipo Impactante: Guía Paso a Paso</h3>
+                            <h3 className="card-title">El Papel del Diseño Gráfico en las Redes Sociales: Potenciando tu Presencia Digital</h3>
                             <p className="card-text">
-                                Una guía detallada para diseñar un logotipo memorable que represente la identidad única de tu empresa.
+                                Descubre cómo el diseño gráfico innovador puede diferenciar a las empresas en el entorno empresarial del Delta de l'Ebre.
                             </p>
                             <Link to="/blog/diseno2" className="btn btn-light">Leer más</Link>
                         </div>
@@ -86,20 +86,21 @@ const Blog = () => {
                     <h2 className="section-title pb-3">Gestión de Eventos</h2>
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-5">
                         <div className="card-body">
-                            <h3 className="card-title">Claves para una Organización Exitosa de Eventos Corporativos</h3>
+                            <h3 className="card-title">Claves para una Organización Exitosa de Eventos Corporativos: Estrategias para el Éxito</h3>
                             <p className="card-text">
-                                Descubre las claves para organizar eventos corporativos exitosos que dejen una impresión duradera en tus invitados.
-                            </p>
+                                Organizar eventos corporativos exitosos es fundamental para fortalecer la presencia de tu empresa, fomentar relaciones comerciales y crear experiencias memorables.
+                                Descubre las estrategias y prácticas esenciales que te ayudarán a planificar y ejecutar eventos corporativos de manera efectiva, desde la fase de planificación hasta el día del evento.                            </p>
                             <Link to="/blog/eventos1" className="btn btn-light">Leer más</Link>
                         </div>
                     </div>
 
                     <div style={{ backgroundColor: '#2c3e50' }} className="blog-article card text-white mb-4">
                         <div className="card-body">
-                            <h3 className="card-title">Cómo Elegir el Mejor Espacio para tu Evento Empresarial</h3>
+                            <h3 className="card-title">Tendencias Actuales en Organización de Eventos Empresariales: Innovación y Sostenibilidad</h3>
                             <p className="card-text">
-                                Una guía práctica para seleccionar el espacio perfecto que se alinee con la visión de tu evento empresarial.
-                            </p>
+                                Mantente actualizado con las últimas tendencias en la industria de eventos corporativos.
+                                Desde tecnología innovadora hasta enfoques sostenibles, exploraremos cómo las tendencias están dando forma al mundo de la organización de eventos empresariales.
+                                Descubre cómo estas tendencias están transformando la manera en que se planifican y ejecutan los eventos empresariales para crear experiencias inolvidables.                            </p>
                             <Link to="/blog/eventos2" className="btn btn-light">Leer más</Link>
                         </div>
                     </div>
