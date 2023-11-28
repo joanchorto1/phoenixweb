@@ -68,16 +68,17 @@
         }
     }
 </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWDR9M7ZQF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JWDR9M7ZQF');
+    </script>
 
 </head>
 <body>
-<script>
-    // Obtiene la ruta del archivo actual
-    var currentPath = window.location.pathname;
-
-    // Actualiza la etiqueta canonical con la ruta actual
-    document.getElementById('canonicalLink').href = "https://phoenixgrp.es" + currentPath;
-</script>
 <div id="root"></div>
 <!--
   This HTML file is a template.
@@ -89,6 +90,13 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
+<script>
+    // Obtiene la ruta del archivo actual
+    var currentPath = window.location.pathname;
+
+    // Actualiza la etiqueta canonical con la ruta actual
+    document.getElementById('canonicalLink').href = "https://phoenixgrp.es" + currentPath;
+</script>
 
 </body>
 </html>
