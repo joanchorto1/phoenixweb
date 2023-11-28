@@ -24,10 +24,10 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/contact' element={<Contact/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/clients' element={<Clients/>}/>
-                <Route path='/services' element={<Services/>}/>
+                <Route path='/contacto' element={<Contact/>}/>
+                <Route path='/sobrenosotros' element={<About/>}/>
+                <Route path='/clientes' element={<Clients/>}/>
+                <Route path='/servicios' element={<Services/>}/>
                 <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
                 <Route path='/cookie-notice' element={<CookieNotice/>}/>
                 <Route path='/terms-and-conditions' element={<TermsAndConditions/>}/>

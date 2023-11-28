@@ -81,7 +81,7 @@ const Services = () => {
                             mercado!
                         </p>
                         <Link
-                            to="/contact"
+                            to="/contacto"
                             className="btn btn-primary text-center"
                             style={{ backgroundColor: "#2c3e50", color: "#fff" }}
                         >

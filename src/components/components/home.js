@@ -42,10 +42,9 @@ const Home = () => {
                     <h1 className={"mb-4"}>Phoenix Group</h1>
                     <h2>Agencia de Marketing Digital, Diseño Gráfico y Desarrollo Web en Tarragona y el Delta de l'Ebre</h2>
                     <p className="text-center">
-                        Descubre el poder de Phoenix Group, tu socio estratégico para soluciones de marketing, diseño
-                        gráfico y desarrollo web. Fusionamos creatividad y tecnología para llevar tu negocio al siguiente nivel.
+                        Descubre el poder de Phoenix Group. Fusionamos creatividad y tecnología para llevar tu negocio al siguiente nivel.
                     </p>
-                    <Button variant="outline-light" href={"/about"}>Conoce más</Button>
+                    <Button variant="outline-light" href={"/sobrenosotros"}>Conoce más</Button>
                 </div>
             </section>
 
@@ -95,7 +94,7 @@ const Home = () => {
                     soluciones personalizadas que se alinean con tus objetivos comerciales.
                 </p>
                 <div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>
-                    <Button variant="outline-light" className="mt-4"><a href="/contact" style={{ color: "white" }}>Contacta ahora</a></Button>
+                    <Button variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>Contacta ahora</a></Button>
                 </div>
             </section>
             {/*Proceso de trabajo*/}
@@ -135,7 +134,7 @@ const Home = () => {
                 </div>
 
                 <div >
-                    <Button style={{backgroundColor:'#2c3e50'}} variant="outline-light" className="mt-4"><a href="/contact" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
+                    <Button style={{backgroundColor:'#2c3e50'}} variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
                 </div>
             </section>
             {/* Sección de Crecimiento de Clientes */}
@@ -157,7 +156,7 @@ const Home = () => {
                     ))}
                 </div>
                 <div className="mt-3">
-                    <Button style={{ backgroundColor: '#2c3e50' }} href="/contact" className="btn btn-primary">
+                    <Button style={{ backgroundColor: '#2c3e50' }} href="/contacto" className="btn btn-primary">
                         Contacta
                     </Button>
                 </div>
@@ -219,7 +218,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>
-                        <Button variant="outline-light" className="mt-4"><a href="/services" style={{ color: "white" }}>Descubre más</a></Button>
+                        <Button variant="outline-light" className="mt-4"><a href="/servicios" style={{ color: "white" }}>Descubre más</a></Button>
                     </div>
                 </div>
             </section>
