@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Button, Carousel } from 'react-bootstrap';
 import Layout from "../layout/layout";
 import LogoVidal from "../img/tomasvidal.png";
 import LogoGastromar from "../img/Selecció_161.png";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const growthData = [
     { month: 'Mes 1', leads: 50 },
@@ -14,6 +15,16 @@ const growthData = [
 ];
 
 const Home = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Phoenix Group - Tu Socio en Marketing Digital y Desarrollo Web',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
 
     const calculatePath = () => {
         const maxY = Math.max(...growthData.map((data) => data.leads));
