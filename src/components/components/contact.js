@@ -1,8 +1,19 @@
 import Layout from "../layout/layout";
 import emailjs from 'emailjs-com';
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const Contact = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Contacta con Phoenix Group',
+
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     const [isFormSubmitted, setFormSubmitted] = useState(false);
     const [formFields, setFormFields] = useState({
         nombre: '',

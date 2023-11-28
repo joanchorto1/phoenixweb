@@ -1,15 +1,26 @@
 // Archivo: marketingDigital2.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const MarketingDigital2 = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Secretos del Éxito en el Marketing en el Delta de l\'Ebre',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
 
                 <div className="container mt-5">
-                    <h1 className="text-center">Secretos del Éxito en el Marketing Online: Estrategias Digitales para </h1>
+                    <h1 className="text-center">Secretos del Éxito en el Marketing Online: Estrategias Digitales para sobresalir en el Delta de l'Ebre</h1>
 
-                    <p> <strong>Sobresalir en el Delta de l'Ebre</strong>
+                    <p>
                         El Delta de l'Ebre, con su paisaje impresionante y su rica herencia cultural, es un lugar único que presenta oportunidades únicas para el marketing online. En este artículo, desentrañaremos los secretos del éxito en el marketing online, centrándonos en estrategias digitales diseñadas para destacar en el incomparable entorno del Delta de l'Ebre.
                     </p>
 

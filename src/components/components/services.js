@@ -1,8 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const Services = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Servicios de Phoenix Group',
+            description: 'Aqui se mustran los servicios que ofrece nuestra empresa',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
+
     const servicesData = [
         {
             title: "Marketing Digital",

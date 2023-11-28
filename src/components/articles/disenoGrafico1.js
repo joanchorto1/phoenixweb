@@ -1,8 +1,19 @@
 // Archivo: disenoGrafico1.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const DisenoGrafico1 = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Diseño de Logotipos en la Identidad de Marca: Construyendo una Imagen Duradera',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
             <div className="container mt-5">

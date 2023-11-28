@@ -1,9 +1,20 @@
 import Layout from "../layout/layout";
-import React from "react";
+import React, {useEffect} from "react";
+import {useMetaTags} from "../context/metaTagsContext";
 
 
 
 const About = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Sobre Nosotros',
+
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
             <div className={"container pt-4"} >

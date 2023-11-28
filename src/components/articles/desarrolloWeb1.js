@@ -1,8 +1,19 @@
 // Archivo: desarrolloWeb1.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const DesarrolloWeb1 = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'El Papel del Diseño Web en el Éxito Empresarial en Tarragona',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
             <div className="container mt-5">

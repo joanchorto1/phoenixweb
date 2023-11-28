@@ -1,8 +1,19 @@
 // Archivo: disenoGrafico2.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const DisenoGrafico2 = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Diseño Gráfico en las Redes Sociales: Potenciando tu Presencia Digital',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
             <div className="container mt-5">

@@ -1,8 +1,19 @@
 // Archivo: desarrolloWeb2.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const DesarrolloWeb2 = () => {
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Desarrollo Web en el Delta de l\'Ebre: Tendencias que Debes Conocer',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
     return (
         <Layout>
             <div className="container mt-5">

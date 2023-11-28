@@ -1,10 +1,22 @@
 // Archivo: blog.js
-import React from "react";
+import React, {useEffect} from "react";
 import Layout from "../layout/layout";
 import { Link } from "react-router-dom";
+import {useMetaTags} from "../context/metaTagsContext";
 
 const Blog = () => {
-    return (
+    const { updateMetaTags } = useMetaTags();
+
+    useEffect(() => {
+        // Actualiza las metaetiquetas específicas para esta página
+        updateMetaTags({
+            title: 'Blog phoenix',
+            description: 'Descripción  del Blog',
+            // ... otras metaetiquetas específicas
+        });
+    }, [updateMetaTags]);
+     return (
+
         <Layout>
             <div className="container mt-5">
                 <h1 className="text-center">Blog de Phoenix Group</h1>

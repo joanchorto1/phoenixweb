@@ -1,12 +1,20 @@
 import React from 'react';
 import logoImage from '../img/phoenixlogo.png';
 import logoImage2 from '../img/phoenixlogo2.png';
+import { Helmet } from 'react-helmet';
+import {useMetaTags} from "../context/metaTagsContext";
 
 
 
 const Layout = ({ children }) => {
+    const { metaTags } = useMetaTags();
     return (
         <>
+            <Helmet>
+                <title>{metaTags.title || 'Título predeterminado'}</title>
+                <meta name="description" content={metaTags.description || 'Descripción predeterminada'} />
+                {/* ... otras metaetiquetas comunes */}
+            </Helmet>
             <header style={{ backgroundColor: '#2c3e50', padding: '0.5rem 0', paddingBottom: '0' }}>
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container">
