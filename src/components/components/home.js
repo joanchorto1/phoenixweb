@@ -90,9 +90,9 @@ const Home = () => {
                 </div>
             </section>
             <section className="text-center" style={{ paddingTop: '2%' }}>
+                <div className={"container"}>
                 <h2 className="mb-4 text-dark">Nuestros Servicios</h2>
-                <div className="row">
-                    <div className="col-md-6 mb-4">
+
                         <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Marketing Digital</h5>
                             <p>
@@ -103,9 +103,9 @@ const Home = () => {
                             </p>
                             <img className="card-img-top w-25"  src={Marketing} alt="marketing digital en tarragona img "/>
                         </div>
-                    </div>
 
-                    <div className="col-md-6 mb-4">
+
+
                         <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Desarrollo Web</h5>
                             <p>
@@ -116,9 +116,9 @@ const Home = () => {
                             </p>
                             <img className="card-img-top w-25"  src={desweb} alt="desarrollo web en tarragona img "/>
                         </div>
-                    </div>
 
-                    <div className="col-md-6 mb-4">
+
+
                         <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Diseño Gráfico</h5>
                             <p>
@@ -129,10 +129,9 @@ const Home = () => {
                             </p>
                             <img className="card-img-top w-25"  src={disgraf} alt="diseño grafico en tarragona img "/>
                         </div>
-                    </div>
 
-                    <div className="col-md-6">
-                        <div className="shadow p-3 mb-5 bg-light rounded">
+
+                    <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Gestión de Eventos</h5>
                             <p>
                                 Organizamos eventos memorables desde la planificación hasta la ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras.
@@ -142,7 +141,7 @@ const Home = () => {
                             </p>
                             <img className="card-img-top w-25"  src={evnt} alt="organizacion de eventos en tarragona img "/>
                         </div>
-                    </div>
+
                     <div className="col-12 text-center mb-4">
                         <Button variant="outline-dark" className="mt-4"><a href="/servicios" style={{ color: "black" }}>Descubre más</a></Button>
                     </div>
