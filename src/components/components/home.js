@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Button, Carousel } from 'react-bootstrap';
 import Layout from "../layout/layout";
 import LogoVidal from "../img/tomasvidal.png";
 import LogoGastromar from "../img/Selecció_161.png";
-import {useMetaTags} from "../context/metaTagsContext";
+import { useMetaTags } from "../context/metaTagsContext";
 import home1 from '../img/Home1.jpg';
 import home2 from '../img/Home2.jpg';
 import home3 from '../img/home3.jpg';
@@ -24,7 +24,7 @@ const Home = () => {
         // Actualiza las metaetiquetas específicas para esta página
         updateMetaTags({
             title: 'Phoenix Group - Tu Socio en Marketing Digital y Desarrollo Web',
-            description: 'Descripción  del Blog',
+            description: 'Potencia tu negocio con Phoenix Group, tu agencia de Marketing Digital y Desarrollo Web en Tarragona y el Delta de l\'Ebre. Creatividad, tecnología y resultados tangibles.',
             // ... otras metaetiquetas específicas
         });
     }, [updateMetaTags]);
@@ -54,7 +54,7 @@ const Home = () => {
             }}>
                 <div className="container text-center">
                     <h1 className={"mb-4"}>Phoenix Group</h1>
-                    <h2>Agencia de Marketing Digital, Diseño Gráfico y Desarrollo Web en Tarragona y el Delta de l'Ebre</h2>
+                    <h2>Transformamos tu negocio con Marketing Digital y Desarrollo Web en Tarragona y el Delta de l'Ebre</h2>
                     <p className="text-center">
                         Descubre el poder de Phoenix Group. Fusionamos creatividad y tecnología para llevar tu negocio al siguiente nivel.
                     </p>
@@ -68,14 +68,10 @@ const Home = () => {
                 <div className="row text-white" style={{ backgroundColor: '#2c3e50' }}>
                     <div className="col-md-8 offset-md-2">
                         <p>
-                            En Phoenix Group, nos destacamos por nuestra capacidad para fusionar creatividad y tecnología.
-                            Nuestra fortaleza radica en la creación de soluciones innovadoras que impulsan el crecimiento de
-                            nuestros clientes.
+                            En Phoenix Group, destacamos por nuestra capacidad para fusionar creatividad y tecnología, creando soluciones innovadoras que impulsan el crecimiento de nuestros clientes.
                         </p>
                         <p>
-                            Con un equipo altamente calificado y un enfoque centrado en el cliente, trabajamos para convertir
-                            ideas en resultados tangibles. Desde estrategias de marketing efectivas hasta desarrollo web
-                            personalizado, estamos aquí para impulsar tu negocio hacia el éxito.
+                            Con un equipo altamente calificado y un enfoque centrado en el cliente, transformamos ideas en resultados tangibles, desde estrategias de marketing hasta desarrollo web personalizado.
                         </p>
                     </div>
                 </div>
@@ -86,13 +82,10 @@ const Home = () => {
                 <h2 className="mb-4">Nuestros Clientes</h2>
                 <Carousel className="d-inline">
                     <Carousel.Item>
-                        <img className="d-inline w-25 h25"
-                             src={LogoVidal}
-                             alt="Piscines Tomas Vidal SL" />
+                        <img className="d-inline w-25 h25" src={LogoVidal} alt="Piscines Tomas Vidal SL" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="d-inline w-25"
-                             src={LogoGastromar}   alt="Gastromar Tortosa" />
+                        <img className="d-inline w-25" src={LogoGastromar} alt="Gastromar Tortosa" />
                     </Carousel.Item>
                 </Carousel>
                 {/*<div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>*/}
@@ -104,8 +97,7 @@ const Home = () => {
             <section className="mb-5 text-center text-white pb-3 pt-4" style={{ backgroundColor: '#2c3e50' }}>
                 <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
                 <p>
-                    Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Estamos aquí para ofrecerte
-                    soluciones personalizadas que se alinean con tus objetivos comerciales.
+                    Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Ofrecemos soluciones personalizadas alineadas con tus objetivos comerciales.
                 </p>
                 <div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>
                     <Button variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>Contacta ahora</a></Button>
@@ -147,8 +139,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div >
-                    <Button style={{backgroundColor:'#2c3e50'}} variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
+                <div>
+                    <Button style={{ backgroundColor: '#2c3e50' }} variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
                 </div>
             </section>
             {/* Sección de Crecimiento de Clientes */}
@@ -184,8 +176,7 @@ const Home = () => {
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Marketing Digital</h5>
                             <p>
-                                Ofrecemos soluciones integrales de marketing digital, desde la gestión de redes sociales
-                                hasta estrategias avanzadas de generación de leads, optimizando la visibilidad y el compromiso.
+                                Potenciamos tu visibilidad con soluciones integrales de marketing digital, desde la gestión de redes sociales hasta estrategias avanzadas de generación de leads.
                             </p>
                             <p>
                                 SEO, Redes Sociales, Estrategias de Marketing Digital
@@ -197,8 +188,7 @@ const Home = () => {
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Desarrollo Web</h5>
                             <p>
-                                Desarrollamos software personalizado, implementamos sistemas ERP para una gestión
-                                empresarial eficiente y creamos aplicaciones web innovadoras, adaptadas a tus necesidades.
+                                Creamos experiencias únicas con desarrollo web personalizado, sistemas ERP eficientes y aplicaciones innovadoras adaptadas a tus necesidades.
                             </p>
                             <p>
                                 Desarrollo de Software, Sistemas ERP, Aplicaciones Web
@@ -210,8 +200,7 @@ const Home = () => {
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Diseño Gráfico</h5>
                             <p>
-                                Transformamos ideas en imágenes impactantes, desde el diseño de logos y carteles hasta
-                                la creación de contenido visual para redes sociales, destacando tu marca en un mundo visualmente competitivo.
+                                Transformamos ideas en imágenes impactantes, desde el diseño de logos hasta la creación de contenido visual para redes sociales, destacando tu marca en un mundo visualmente competitivo.
                             </p>
                             <p>
                                 Diseño de Logos, Diseño Gráfico Impactante, Contenido Visual para Redes Sociales
@@ -223,8 +212,7 @@ const Home = () => {
                         <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
                             <h5 className="mt-3">Gestión de Eventos</h5>
                             <p>
-                                Nos encargamos de la organización completa de eventos, desde la planificación hasta la
-                                ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras, para eventos memorables y exitosos.
+                                Organizamos eventos memorables desde la planificación hasta la ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras.
                             </p>
                             <p>
                                 Organización de Eventos, Planificación de Eventos, Eventos Memorables
@@ -263,13 +251,12 @@ const Home = () => {
                             <img src={home3} className="card-img-top" alt="Miembro del Equipo 3" />
                             <div className="card-body">
                                 <h5 className="card-title">David Cano</h5>
-                                <p className="card-text">Tecnico de Marketing</p>
+                                <p className="card-text">Técnico de Marketing</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </Layout>
     );
 };
