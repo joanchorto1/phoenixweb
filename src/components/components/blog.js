@@ -1,6 +1,6 @@
 // Archivo: blog.js
 import React, {useEffect} from "react";
-import Layout from "../layout/layout";
+
 import { Link } from "react-router-dom";
 import {useMetaTags} from "../context/metaTagsContext";
 

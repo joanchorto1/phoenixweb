@@ -9,7 +9,7 @@ import Clients from "./components/components/clients";
 import PrivacyPolicy from "./components/components/privacy-policy";
 import CookieNotice from "./components/components/cookie-notice";
 import TermsAndConditions from "./components/components/terms-and-conditions";
-import Blog from "./components/components/blog";
+
 import MarketingDigital1 from "./components/articles/marketingDigital1";
 import MarketingDigital2 from "./components/articles/marketingDigital2";
 import DesarrolloWeb1 from "./components/articles/desarrolloWeb1";
