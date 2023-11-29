@@ -31,7 +31,6 @@ function App() {
                 <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
                 <Route path='/cookie-notice' element={<CookieNotice/>}/>
                 <Route path='/terms-and-conditions' element={<TermsAndConditions/>}/>
-                <Route path='/blog' element={<Blog/>}/>
                 {/* Rutas de artículos de blog */}
                 <Route path='/blog/marketing1' element={<MarketingDigital1/>}/>
                 <Route path='/blog/marketing2' element={<MarketingDigital2/>}/>
