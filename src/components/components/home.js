@@ -7,6 +7,10 @@ import { useMetaTags } from "../context/metaTagsContext";
 import home1 from '../img/Home1.jpg';
 import home2 from '../img/Home2.jpg';
 import home3 from '../img/home3.jpg';
+import desweb from '../img/desweb.jpg';
+import Marketing from '../img/markimg.jpg'
+import disgraf from '../img/markimg2.jpg'
+import evnt from '../img/oevents.jpg'
 import Blog from "./blog";  // Importa el componente del blog
 
 const growthData = [
@@ -85,11 +89,11 @@ const Home = () => {
                     </Button>
                 </div>
             </section>
-            <section className="text-center " style={{ backgroundColor: '#2c3e50', paddingTop: '2%' }}>
-                <h2 className="mb-4  text-white">Nuestros Servicios</h2>
-                <div className="row" >
+            <section className="text-center" style={{ paddingTop: '2%' }}>
+                <h2 className="mb-4 text-dark">Nuestros Servicios</h2>
+                <div className="row">
                     <div className="col-md-6 mb-4">
-                        <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Marketing Digital</h5>
                             <p>
                                 Potenciamos tu visibilidad con soluciones integrales de marketing digital, desde la gestión de redes sociales hasta estrategias avanzadas de generación de leads.
@@ -97,11 +101,12 @@ const Home = () => {
                             <p>
                                 SEO, Redes Sociales, Estrategias de Marketing Digital
                             </p>
+                            <img className="card-img-top w-25"  src={Marketing} alt="marketing digital en tarragona img "/>
                         </div>
                     </div>
 
                     <div className="col-md-6 mb-4">
-                        <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Desarrollo Web</h5>
                             <p>
                                 Creamos experiencias únicas con desarrollo web personalizado, sistemas ERP eficientes y aplicaciones innovadoras adaptadas a tus necesidades.
@@ -109,11 +114,12 @@ const Home = () => {
                             <p>
                                 Desarrollo de Software, Sistemas ERP, Aplicaciones Web
                             </p>
+                            <img className="card-img-top w-25"  src={desweb} alt="desarrollo web en tarragona img "/>
                         </div>
                     </div>
 
                     <div className="col-md-6 mb-4">
-                        <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Diseño Gráfico</h5>
                             <p>
                                 Transformamos ideas en imágenes impactantes, desde el diseño de logos hasta la creación de contenido visual para redes sociales, destacando tu marca en un mundo visualmente competitivo.
@@ -121,11 +127,12 @@ const Home = () => {
                             <p>
                                 Diseño de Logos, Diseño Gráfico Impactante, Contenido Visual para Redes Sociales
                             </p>
+                            <img className="card-img-top w-25"  src={disgraf} alt="diseño grafico en tarragona img "/>
                         </div>
                     </div>
 
-                    <div className="col-md-6 ">
-                        <div style={{ backgroundColor: '#2c3e50' }} className="shadow p-3 mb-5 text-white rounded">
+                    <div className="col-md-6">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h5 className="mt-3">Gestión de Eventos</h5>
                             <p>
                                 Organizamos eventos memorables desde la planificación hasta la ejecución, incluyendo la contratación de personal y el alquiler de infraestructuras.
@@ -133,10 +140,11 @@ const Home = () => {
                             <p>
                                 Organización de Eventos, Planificación de Eventos, Eventos Memorables
                             </p>
+                            <img className="card-img-top w-25"  src={evnt} alt="organizacion de eventos en tarragona img "/>
                         </div>
                     </div>
-                    <div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>
-                        <Button variant="outline-light" className="mt-4"><a href="/servicios" style={{ color: "white" }}>Descubre más</a></Button>
+                    <div className="col-12 text-center mb-4">
+                        <Button variant="outline-dark" className="mt-4"><a href="/servicios" style={{ color: "black" }}>Descubre más</a></Button>
                     </div>
                 </div>
             </section>
@@ -211,10 +219,10 @@ const Home = () => {
                 <h2 className="mb-4">Nuestros Clientes</h2>
                 <Carousel className="d-inline">
                     <Carousel.Item>
-                        <img className="d-inline w-25 h25" src={LogoVidal} alt="Piscines Tomas Vidal SL" />
+                        <img className="card-img-top w-25" src={LogoVidal} alt="Piscines Tomas Vidal SL" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="d-inline w-25" src={LogoGastromar} alt="Gastromar Tortosa" />
+                        <img className="card-img-top w-25" src={LogoGastromar} alt="Gastromar Tortosa" />
                     </Carousel.Item>
                 </Carousel>
                 {/*<div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>*/}
