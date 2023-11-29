@@ -166,37 +166,37 @@ const Home = () => {
             <section className="mb-5 text-center">
                 <h2 className="mb-4">Nuestro Proceso de Trabajo</h2>
 
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="mb-4">
+                <div className={"container"}>
+
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h3>Paso 1: Consulta Inicial</h3>
                             <p>
                                 Comenzamos con una consulta para comprender tus objetivos, necesidades y requisitos específicos.
                             </p>
                         </div>
 
-                        <div className="mb-4">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h3>Paso 2: Estrategia Personalizada</h3>
                             <p>
                                 Desarrollamos una estrategia personalizada que se alinee con tus metas comerciales y maximice los resultados.
                             </p>
                         </div>
 
-                        <div className="mb-4">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h3>Paso 3: Implementación y Desarrollo</h3>
                             <p>
                                 Ponemos en marcha la estrategia acordada, ya sea a través de campañas de marketing, desarrollo web o diseño gráfico.
                             </p>
                         </div>
 
-                        <div className="mb-4">
+                        <div className="shadow p-3 mb-5 bg-light rounded">
                             <h3>Paso 4: Seguimiento y Optimización</h3>
                             <p>
                                 Realizamos un seguimiento continuo de los resultados y ajustamos la estrategia según sea necesario para mejorar el rendimiento.
                             </p>
                         </div>
                     </div>
-                </div>
+
 
             </section>
             <section className="mb-5 text-center pb-5 pt-5 " >
