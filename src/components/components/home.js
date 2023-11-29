@@ -198,11 +198,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div>
-                    <Button style={{ backgroundColor: '#2c3e50' }} variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
-                </div>
             </section>
-            <section className="mb-5 text-center pb-3 " >
+            <section className="mb-5 text-center pb-5 pt-5 " >
                 <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
                 <p>
                     Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Ofrecemos soluciones personalizadas alineadas con tus objetivos comerciales.
