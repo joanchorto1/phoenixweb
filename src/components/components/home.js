@@ -4,9 +4,9 @@ import Layout from "../layout/layout";
 import LogoVidal from "../img/tomasvidal.png";
 import LogoGastromar from "../img/Selecció_161.png";
 import { useMetaTags } from "../context/metaTagsContext";
-import home1 from '../img/Home1.jpg';
-import home2 from '../img/Home2.jpg';
-import home3 from '../img/home3.jpg';
+// import home1 from '../img/Home1.jpg';
+// import home2 from '../img/Home2.jpg';
+// import home3 from '../img/home3.jpg';
 import desweb from '../img/desweb.jpg';
 import Marketing from '../img/markimg.jpg'
 import disgraf from '../img/markimg2.jpg'
@@ -222,38 +222,38 @@ const Home = () => {
                 {/*    <Button variant="outline-light" className="mt-4"><a href="/clients" style={{ color: "white" }}>Ver más clientes</a></Button>*/}
                 {/*</div>*/}
             </section>
-            <section className="mb-5 text-center pt-5">
-                <h2 className="mb-4">Nuestro Equipo</h2>
-                <div className="row">
-                    <div className="col-md-4 mb-4">
-                        <div className="card">
-                            <img src={home1} className="card-img-top" alt="Miembro del Equipo 1" />
-                            <div className="card-body">
-                                <h5 className="card-title">Joan Chortó</h5>
-                                <p className="card-text">Desarrollador web y CTO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 mb-4">
-                        <div className="card">
-                            <img src={home2} className="card-img-top" alt="Miembro del Equipo 2" />
-                            <div className="card-body">
-                                <h5 className="card-title">Marc Alonso</h5>
-                                <p className="card-text">Organizador de Eventos</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 mb-4">
-                        <div className="card">
-                            <img src={home3} className="card-img-top" alt="Miembro del Equipo 3" />
-                            <div className="card-body">
-                                <h5 className="card-title">David Cano</h5>
-                                <p className="card-text">Técnico de Marketing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/*<section className="mb-5 text-center pt-5">*/}
+            {/*    <h2 className="mb-4">Nuestro Equipo</h2>*/}
+            {/*    <div className="row">*/}
+            {/*        <div className="col-md-4 mb-4">*/}
+            {/*            <div className="card">*/}
+            {/*                <img src={home1} className="card-img-top" alt="Miembro del Equipo 1" />*/}
+            {/*                <div className="card-body">*/}
+            {/*                    <h5 className="card-title">Joan Chortó</h5>*/}
+            {/*                    <p className="card-text">Desarrollador web y CTO</p>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="col-md-4 mb-4">*/}
+            {/*            <div className="card">*/}
+            {/*                <img src={home2} className="card-img-top" alt="Miembro del Equipo 2" />*/}
+            {/*                <div className="card-body">*/}
+            {/*                    <h5 className="card-title">Marc Alonso</h5>*/}
+            {/*                    <p className="card-text">Organizador de Eventos</p>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="col-md-4 mb-4">*/}
+            {/*            <div className="card">*/}
+            {/*                <img src={home3} className="card-img-top" alt="Miembro del Equipo 3" />*/}
+            {/*                <div className="card-body">*/}
+            {/*                    <h5 className="card-title">David Cano</h5>*/}
+            {/*                    <p className="card-text">Técnico de Marketing</p>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <Blog />
         </Layout>
     );
