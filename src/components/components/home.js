@@ -162,18 +162,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="mb-5 text-center pb-3 " >
-                <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
-                <p>
-                    Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Ofrecemos soluciones personalizadas alineadas con tus objetivos comerciales.
-                </p>
-                <div style={{ width: '100%', alignItems: 'center' }} className={'mb-4'}>
-                    <Button style={{backgroundColor:'#2c3e50'}} className="mt-4"><a href="/contacto" style={{backgroundColor:'#2c3e50', color: "white" }}>Contacta ahora</a></Button>
-                </div>
-            </section>
-
-
-
 
             <section className="mb-5 text-center">
                 <h2 className="mb-4">Nuestro Proceso de Trabajo</h2>
@@ -212,6 +200,15 @@ const Home = () => {
 
                 <div>
                     <Button style={{ backgroundColor: '#2c3e50' }} variant="outline-light" className="mt-4"><a href="/contacto" style={{ color: "white" }}>¡Comienza Ahora!</a></Button>
+                </div>
+            </section>
+            <section className="mb-5 text-center pb-3 " >
+                <h2 className="mb-4">¿Listo para Potenciar tu Negocio?</h2>
+                <p>
+                    Descubre cómo Phoenix Group puede llevar tu empresa al siguiente nivel. Ofrecemos soluciones personalizadas alineadas con tus objetivos comerciales.
+                </p>
+                <div style={{ width: '100%', alignItems: 'center' }} className={'mb-4'}>
+                    <Button style={{backgroundColor:'#2c3e50'}} className="mt-4"><a href="/contacto" style={{backgroundColor:'#2c3e50', color: "white" }}>Contacta ahora</a></Button>
                 </div>
             </section>
             <section className="mb-5 text-center">
