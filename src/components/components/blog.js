@@ -19,11 +19,11 @@ const Blog = () => {
 
 
             <div className="container mt-5">
-                <h2 className="text-center">Blog de Phoenix Group</h2>
+                <h2 className="text-center pb-3">Blog de Phoenix Group</h2>
 
                 {/* Sección de Marketing Digital */}
                 <section className="mb-4">
-                    <h3 className="section-title pb-3">Marketing Digital</h3>
+
                     <div  className="card mb-4">
                         <div className="card-body">
                             <h4 className="card-title">Cómo una Estrategia Integral de Marketing Digital Puede Impulsar tu Negocio en Tarragona</h4>
@@ -43,11 +43,9 @@ const Blog = () => {
                             <Link to="/blog/marketing2" className="btn btn-light">Leer más</Link>
                         </div>
                     </div>
-                </section>
 
-                {/* Sección de Desarrollo Web */}
-                <section className="mb-4">
-                    <h3 className="section-title pb-3">Desarrollo Web</h3>
+
+
                     <div  className="card mb-4">
                         <div className="card-body">
                             <h4 className="card-title">El Papel Fundamental del Diseño Web en el Éxito Empresarial en Tarragona</h4>
@@ -67,11 +65,9 @@ const Blog = () => {
                             <Link to="/blog/desarrollo2" className="btn btn-light">Leer más</Link>
                         </div>
                     </div>
-                </section>
 
-                {/* Sección de Diseño Gráfico */}
-                <section className="mb-4">
-                    <h3 className="section-title pb-3">Diseño Gráfico</h3>
+
+
                     <div  className="card mb-4">
                         <div className="card-body">
                             <h4 className="card-title">El Impacto del Diseño de Logotipos en la Identidad de Marca: Construyendo una Imagen Duradera</h4>
@@ -91,11 +87,9 @@ const Blog = () => {
                             <Link to="/blog/diseno2" className="btn btn-light">Leer más</Link>
                         </div>
                     </div>
-                </section>
 
-                {/* Sección de Gestión de Eventos */}
-                <section>
-                    <h3 className="section-title pb-3">Gestión de Eventos</h3>
+
+
                     <div  className="card mb-5">
                         <div className="card-body">
                             <h4 className="card-title">Claves para una Organización Exitosa de Eventos Corporativos: Estrategias para el Éxito</h4>

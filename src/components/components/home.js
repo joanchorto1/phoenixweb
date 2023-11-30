@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Button, Carousel } from 'react-bootstrap';
 import Layout from "../layout/layout";
-import LogoVidal from "../img/tomasvidal.png";
-import LogoGastromar from "../img/Selecció_161.png";
+// import LogoVidal from "../img/tomasvidal.png";
+// import LogoGastromar from "../img/Selecció_161.png";
 import { useMetaTags } from "../context/metaTagsContext";
 // import home1 from '../img/Home1.jpg';
 // import home2 from '../img/Home2.jpg';
@@ -67,6 +67,9 @@ const Home = () => {
                 </div>
             </section>
             <section className="mb-5 text-center">
+                <div className={"container"}>
+
+
                 <h2 className="mb-4 mt-3">Crecimiento de Clientes</h2>
                 <div className="row">
                     <div className="col-md-12">
@@ -87,6 +90,7 @@ const Home = () => {
                     <Button style={{ backgroundColor: '#2c3e50' }} href="/contacto" className="btn btn-primary">
                         Contacta
                     </Button>
+                </div>
                 </div>
             </section>
             <section className="text-center" style={{ paddingTop: '2%' }}>
@@ -149,19 +153,7 @@ const Home = () => {
             </section>
 
 
-            <section className="mb-5 text-center pt-4 " >
-                <h2 className="mb-4 ">Nuestra Fortaleza</h2>
-                <div className="row " >
-                    <div className="col-md-8 offset-md-2">
-                        <p>
-                            En Phoenix Group, destacamos por nuestra capacidad para fusionar creatividad y tecnología, creando soluciones innovadoras que impulsan el crecimiento de nuestros clientes.
-                        </p>
-                        <p>
-                            Con un equipo altamente calificado y un enfoque centrado en el cliente, transformamos ideas en resultados tangibles, desde estrategias de marketing hasta desarrollo web personalizado.
-                        </p>
-                    </div>
-                </div>
-            </section>
+
 
             <section className="mb-5 text-center">
                 <h2 className="mb-4">Nuestro Proceso de Trabajo</h2>
@@ -208,20 +200,20 @@ const Home = () => {
                     <Button style={{backgroundColor:'#2c3e50'}} className="mt-4"><a href="/contacto" style={{backgroundColor:'#2c3e50', color: "white" }}>Contacta ahora</a></Button>
                 </div>
             </section>
-            <section className="mb-5 text-center">
-                <h2 className="mb-4">Nuestros Clientes</h2>
-                <Carousel className="d-inline">
-                    <Carousel.Item>
-                        <img className="card-img-top w-25" src={LogoVidal} alt="Piscines Tomas Vidal SL" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="card-img-top w-25" src={LogoGastromar} alt="Gastromar Tortosa" />
-                    </Carousel.Item>
-                </Carousel>
-                {/*<div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>*/}
-                {/*    <Button variant="outline-light" className="mt-4"><a href="/clients" style={{ color: "white" }}>Ver más clientes</a></Button>*/}
-                {/*</div>*/}
-            </section>
+            {/*<section className="mb-5 text-center">*/}
+            {/*    <h2 className="mb-4">Nuestros Clientes</h2>*/}
+            {/*    <Carousel className="d-inline">*/}
+            {/*        <Carousel.Item>*/}
+            {/*            <img className="card-img-top w-25" src={LogoVidal} alt="Piscines Tomas Vidal SL" />*/}
+            {/*        </Carousel.Item>*/}
+            {/*        <Carousel.Item>*/}
+            {/*            <img className="card-img-top w-25" src={LogoGastromar} alt="Gastromar Tortosa" />*/}
+            {/*        </Carousel.Item>*/}
+            {/*    </Carousel>*/}
+            {/*    /!*<div style={{ backgroundColor: '#2c3e50', width: '100%', alignItems: 'center' }} className={'mb-4'}>*!/*/}
+            {/*    /!*    <Button variant="outline-light" className="mt-4"><a href="/clients" style={{ color: "white" }}>Ver más clientes</a></Button>*!/*/}
+            {/*    /!*</div>*!/*/}
+            {/*</section>*/}
             {/*<section className="mb-5 text-center pt-5">*/}
             {/*    <h2 className="mb-4">Nuestro Equipo</h2>*/}
             {/*    <div className="row">*/}
