@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+        <loc>https://phoenixgrp.es/</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/services</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/contact</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://phoenixgrp.es/about</loc>
+        <lastmod>2023-11-24T18:06:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/marketing1</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/marketing2</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/desarrollo1</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/desarrollo2</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/diseno1</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/diseno2</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/eventos1</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://phoenixgrp.es/blog/eventos2</loc>
+        <lastmod>2023-11-28T18:53:41+01:00</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+
+</urlset>

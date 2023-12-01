@@ -1,19 +1,11 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../layout/layout";
-import {useMetaTags} from "../context/metaTagsContext";
+
+import {Helmet} from "react-helmet";
 
 const Services = () => {
-    const { updateMetaTags } = useMetaTags();
 
-    useEffect(() => {
-        // Actualiza las metaetiquetas específicas para esta página
-        updateMetaTags({
-            title: 'Servicios de Phoenix Group',
-            description: 'Aqui se mustran los servicios que ofrece nuestra empresa',
-            // ... otras metaetiquetas específicas
-        });
-    }, [updateMetaTags]);
 
     const servicesData = [
         {
@@ -64,6 +56,11 @@ const Services = () => {
 
     return (
         <Layout>
+            <Helmet>
+                <title>Phoenix Group - Nuestros servicios</title>
+                <link rel="canonical" href="https://phoenixgrp.es/servicios"/>
+                <meta name={'description'} content={"En Phoenix Group ofrecemis diversos servicios para nustros clientes. Entre ellos destacan Marketing digital , Diseño grafico, desarrollo y diseño web y Organizacion de eventos."}/>
+            </Helmet>
             <div className="container mt-5">
                 <section style={{ marginBottom: "10%" }}>
                     <h1 className={"text-center"}>Nuestros Servicios</h1>

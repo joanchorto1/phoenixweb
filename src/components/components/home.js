@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from 'react-bootstrap';
 import Layout from "../layout/layout";
+import { Helmet } from 'react-helmet';
 import phoenixpres from "../img/phoenix group marketing.jpeg"
 // import LogoVidal from "../img/tomasvidal.png";
 // import LogoGastromar from "../img/Selecció_161.png";
-import { useMetaTags } from "../context/metaTagsContext";
 // import home1 from '../img/Home1.jpg';
 // import home2 from '../img/Home2.jpg';
 // import home3 from '../img/home3.jpg';
@@ -24,16 +24,7 @@ const growthData = [
 ];
 
 const Home = () => {
-    const { updateMetaTags } = useMetaTags();
 
-    useEffect(() => {
-        // Actualiza las metaetiquetas específicas para esta página
-        updateMetaTags({
-            title: 'Phoenix Group - Tu Socio en Marketing Digital y Desarrollo Web',
-            description: 'Potencia tu negocio con Phoenix Group, tu agencia de Marketing Digital y Desarrollo Web en Tarragona y el Delta de l\'Ebre. Creatividad, tecnología y resultados tangibles.',
-            // ... otras metaetiquetas específicas
-        });
-    }, [updateMetaTags]);
 
     const calculatePath = () => {
         const maxY = Math.max(...growthData.map((data) => data.leads));
@@ -46,7 +37,13 @@ const Home = () => {
     };
 
     return (
+
         <Layout>
+            <Helmet>
+                <title>Phoenix Group - Agencia de Marketing digital y Desarrollo Web</title>
+                <link rel="canonical" href="https://phoenixgrp.es/"/>
+                <meta name={'description'} content={"Nos enorgullece ofrecer soluciones integrales en marketing online, desarrollo web y diseño gráfico en Tarragona, especialmente en el pintoresco Delta de l'Ebre. Nos destacamos por brindar servicios de alta calidad a precios accesibles, creando páginas web sorprendentes y estrategias de marketing online efectivas para impulsar su presencia digital. Descubra la excelencia en diseño web, gráfico y marketing asequible en la encantadora región de Tarragona y el Delta de l'Ebre con nosotros."}/>
+            </Helmet>
             {/* Sección de Bienvenida */}
             {/*<section className="mb-0" style={{*/}
             {/*    backgroundImage: 'url("https://media.licdn.com/dms/image/C4D12AQFvR6webwTsKw/article-cover_image-shrink_720_1280/0/1533823206296?e=2147483647&v=beta&t=wZN4Py-PYNTGQa6WCk1HVhivWC8SWcoIYFN1LdI1b9A")',*/}

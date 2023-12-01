@@ -1,22 +1,21 @@
 import Layout from "../layout/layout";
-import React, {useEffect} from "react";
-import {useMetaTags} from "../context/metaTagsContext";
+import React from "react";
+
+import {Helmet} from "react-helmet";
 
 
 
 const About = () => {
-    const { updateMetaTags } = useMetaTags();
 
-    useEffect(() => {
-        // Actualiza las metaetiquetas específicas para esta página
-        updateMetaTags({
-            title: 'Sobre Nosotros',
 
-            // ... otras metaetiquetas específicas
-        });
-    }, [updateMetaTags]);
+
     return (
         <Layout>
+            <Helmet>
+                <title>Phoenix Group - Sobre Noestros</title>
+                <link rel="canonical" href="https://phoenixgrp.es/sobrenosotros"/>
+                <meta name={'description'} content={"En Phoenix Group, no solo creamos soluciones; creamos conexiones significativas. Nuestra historia es una fusión de creatividad, innovación y dedicación. Como una empresa joven con sede en la hermosa provincia de Tarragona, estamos decididos a dejar una huella duradera en el mundo del marketing, diseño gráfico y desarrollo web."}/>
+            </Helmet>
             <div className={"container pt-4"} >
                 <section  className={"justify-content-around"} style={{marginBottom:'10%' }}>
                     <h1 className="text-center mb-4">Acerca de Nosotros</h1>

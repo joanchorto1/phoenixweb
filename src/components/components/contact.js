@@ -1,19 +1,11 @@
 import Layout from "../layout/layout";
 import emailjs from 'emailjs-com';
-import React, {useEffect, useState} from "react";
-import {useMetaTags} from "../context/metaTagsContext";
+import React, {useState} from "react";
+import {Helmet} from "react-helmet";
+
 
 const Contact = () => {
-    const { updateMetaTags } = useMetaTags();
 
-    useEffect(() => {
-        // Actualiza las metaetiquetas específicas para esta página
-        updateMetaTags({
-            title: 'Contacta con Phoenix Group',
-
-            // ... otras metaetiquetas específicas
-        });
-    }, [updateMetaTags]);
     const [isFormSubmitted, setFormSubmitted] = useState(false);
     const [formFields, setFormFields] = useState({
         nombre: '',
@@ -54,6 +46,11 @@ const Contact = () => {
 
     return (
         <Layout>
+            <Helmet>
+                <title>Phoenix Group - Pagina de Contacto</title>
+                <link rel="canonical" href="https://phoenixgrp.es/contacto"/>
+                <meta name={'description'} content={"Si estas preparado para impular tu empresa, esta es tu pagina web. Contacta con Phoenix Group des de aqui."}/>
+            </Helmet>
             <div className="container mt-5">
                 <section>
                     <h1 className="text-center mb-4">Contacta con Nosotros</h1>
